@@ -4,5 +4,14 @@
 }
 
 .body{
-    
+    font-family: 'loew-next', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.hero-image{
+    background-image: url("../image/happy-family.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
