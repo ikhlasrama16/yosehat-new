@@ -1,6 +1,6 @@
 @font-face {
-    font-family: loew-next;
-    src: url("../font/LoewNext-Regular.otf");
+  font-family: loew-next;
+  src: url("../font/LoewNext-Regular.otf");
 }
 
 * {
@@ -11,8 +11,8 @@
 }
 
 body{
-    font-family: 'loew-next', sans-serif;
-    line-height: 1.6;
+  font-family: 'loew-next', sans-serif;
+  line-height: 1.6;
 }
 
 .hero-background {
@@ -25,10 +25,67 @@ body{
   align-items: center; /* Agar konten di tengah secara vertikal */
 }
 
+.hero-content{
+  width: 500px;
+  margin-left: 300px;
+}
+
 .hero-content > h2{
-    background-color: #344f6c;
-    font-weight: 700;
-    color: #ffff;
-    padding: 10px 10px;
-    border-radius: 10px;
+  background-color: #344f6c;
+  font-weight: 900;
+  color: #ffff;
+  padding: 20px 3px;
+  border-radius: 12px;
+  line-height: 1.6;
+  text-align: initial;
+}
+
+.search-box {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 300px;
+}
+
+.search-tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.search-tabs button {
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.search-tabs .active {
+  color: #fff;
+  background: #2a9df4;
+  border-radius: 5px;
+}
+
+.form-group {
+  display: flex;
+}
+
+.input-zip {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.btn-search {
+  background: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
 }
