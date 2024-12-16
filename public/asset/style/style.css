@@ -48,7 +48,7 @@ body{
 }
 
 .hero-content {
-  margin-right: 500px;
+  margin-right: 600px;
   width: 600px;
   color: #fff;
   z-index: 2;
@@ -57,15 +57,13 @@ body{
 .hero-title {
   background: #284e76;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 20px 20px;
   border-radius: 8px;
   font-size: 2.7rem;
-  margin: 10px 0;
   color: #fff;
   align-items: start;
   font-family: 'Loew Next', sans-serif;
-  font-weight: 900; /* Bold */
-
+  font-weight: 900;
 }
 
 .search-box {
@@ -104,6 +102,23 @@ body{
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
+  width: 100%;
+}
+
+.input-container {
+  position: relative;
+  width: 100%; /* Menjadikan container selebar form-group */
+}
+
+/* Icon Styling */
+.input-icon {
+  position: absolute;
+  left: 10px; /* Jarak dari sisi kiri input */
+  top: 50%;
+  transform: translateY(-50%); /* Membuat ikon berada di tengah secara vertikal */
+  color: #000000; /* Warna ikon */
+  font-size: 1.2rem;
+  margin-left: 10px;
 }
 
 .input-code {
@@ -111,8 +126,10 @@ body{
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-right: 10px;
+  width: 100%;
+  text-indent: 40px;
 }
 
 .btn-search {
@@ -120,13 +137,55 @@ body{
   color: #fff;
   border: none;
   margin-top: 20px;
-  padding: 10px 90px;
+  padding: 15px 90px;
   border-radius: 25px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   cursor: pointer;
   transition: background 0.3s ease-in-out;
+  width: 100%;
 }
 
 .btn-search:hover {
   background: #d34422;
+}
+
+.info-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.info-title{
+  font-weight: 600;
+  font-size: 2.0rem;
+  margin: 20px 0;
+}
+
+.info-card-container{
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2px 16px;
+  gap: 50px;
+  justify-content: center;
+}
+
+.info-card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 25px 25px;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.info-text{
+  font-weight: 700;
+  margin: 0 20px;
+  align-items: center;
+}
+
+.info-icon{
+  font-size: 30px;
 }
