@@ -33,10 +33,11 @@ body{
   justify-content: center;
   background: #f9f9f9;
   overflow: hidden;
+  border-radius: 0 0 100px 100px;
 }
 
 .hero-background {
-  background-image: url('../image/happy-family.jpg'); /* Ganti URL sesuai lokasi gambar Anda */
+  background-image: url('https://placehold.co/1920x1080'); /* Ganti URL sesuai lokasi gambar Anda */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -188,4 +189,95 @@ body{
 
 .info-icon{
   font-size: 30px;
+}
+
+.safety-section{
+  height: 600px;
+  background-color: #faf7f7;
+  margin: 20px 0;
+  border-radius: 0 0 100px 100px;
+}
+.safety-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.safety-image {
+  position: relative;
+  flex: 1;
+  max-width: 50%;
+}
+
+.safety-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.safety-text {
+  flex: 1;
+  max-width: 45%;
+  padding-left: 40px;
+}
+
+.safety-text h2 {
+  font-size: 2.5rem;
+  color: #2a3d59;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.safety-text .highlight {
+  background-color: #dfeeff;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+.safety-text .bold {
+  font-weight: bold;
+}
+
+.safety-text p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.safety-list {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.safety-list li {
+  position: relative;
+  color: #2a3d59;
+  padding-left: 25px;
+}
+
+.safety-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #e4572e;
+}
+
+.safety-list a {
+  color: #e4572e;
+  text-decoration: none;
+}
+
+.safety-list a:hover {
+  text-decoration: underline;
+}
+
+.customize-section{
+  height: 600px;
+  margin: 20px 50px;
 }
