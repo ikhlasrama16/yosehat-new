@@ -232,7 +232,7 @@ body{
   line-height: 1.2;
 }
 
-.safety-text .highlight {
+.highlight {
   background-color: #dfeeff;
   border-radius: 5px;
   padding: 0 5px;
@@ -280,4 +280,30 @@ body{
 .customize-section{
   height: 600px;
   margin: 20px 50px;
+}
+
+.customize-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.customize-text{
+  max-width: 30%;
+}
+
+.customize-image{
+  position: relative;
+  flex: 1;
+  max-width: 40%;
+}
+
+.customize-image img{
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
 }
