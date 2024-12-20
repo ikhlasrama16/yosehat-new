@@ -278,7 +278,7 @@ body{
 }
 
 .customize-section{
-  height: 600px;
+  height: 500px;
   margin: 20px 50px;
 }
 
@@ -306,4 +306,22 @@ body{
   width: 100%;
   height: auto;
   border-radius: 20px;
+}
+
+.finding-section{
+  height: auto;
+  background-color: #faf7f7;
+}
+.finding-content{
+  display: flex;
+  gap: 70px;
+  align-items: center;
+  margin: 0
+}
+
+.footer-section{
+  height: 300px;
+  background-color: #faf7f7;
+  display: flex;
+  justify-content: center;
 }
