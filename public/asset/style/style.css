@@ -179,7 +179,50 @@ body{
   padding: 25px 25px;
   border-radius: 20px;
   align-items: center;
+  flex-wrap: nowrap;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
+
+/* Modal Default Styling */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); /* Black background with transparency */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+}
+
 
 .info-text{
   font-weight: 700;
@@ -319,9 +362,73 @@ body{
   margin: 0
 }
 
-.footer-section{
-  height: 300px;
-  background-color: #faf7f7;
+.finding-text button{
+  width: 300px;
+}
+
+/* Footer */
+.footer-section {
+  border-top: 1px solid #00008B;
+  height: auto;
+  clear: both;
+  padding: 20px 0;
+  text-align: center; /* Center align all text in footer */
+}
+
+.footer-section .container {
+  margin-top: 25px;
+}
+
+/* Flex settings for the footer row */
+.footer-section .row {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Center items horizontally */
+}
+
+.footer-section .logo {
+  flex: 0 0 25%; /* Full width on mobile */
+  max-width: 25%; /* Ensure full width on mobile */
+  padding: 0 15px; /* Optional: Adjust padding */
+}
+
+.footer-section .address {
+  flex: 0 0 50%; /* Full width on mobile */
+  max-width: auto; /* Ensure full width on mobile */
+  padding: 0 15px; /* Optional: Adjust padding */
+  font-size: small;
+}
+
+.footer-section .link {
+  flex: 0 0 25%; /* Full width on mobile */
+  max-width: auto; /* Ensure full width on mobile */
+  padding: 0 15px; /* Optional: Adjust padding */
+}
+
+/* Image settings */
+.footer-section img {
+  width: 150px; /* Default width for larger screens */
+}
+
+/* List settings */
+.footer-section ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+.footer-section ul li {
+  margin-bottom: 10px; /* Add spacing between items */
+  display: flex; /* Align icon and text in a row */
+  align-items: center; /* Vertically align icon and text */
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.footer-section a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: inherit;
+  text-decoration: underline;
 }
