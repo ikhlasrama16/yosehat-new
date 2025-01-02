@@ -23,6 +23,36 @@ body{
   font-family: 'loew-next', sans-serif;
 }
 
+/* navbar */
+.navbar {
+  overflow: hidden;
+  background-color: #ffff;
+  justify-content: space-between;
+}
+
+.navbar a:hover {
+  background-color: #d34422;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+.nav-link{
+  gap: 40px;
+}
+
+.nav-link > a{
+  padding: 0 40px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+
+.nav-logo{
+  padding: 20px 40px;
+}
+
 /* Hero Section */
 .hero-section {
   position: relative;
