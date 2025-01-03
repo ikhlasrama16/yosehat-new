@@ -67,7 +67,7 @@ body{
 }
 
 .hero-background {
-  background-image: url('https://placehold.co/1920x1080'); /* Ganti URL sesuai lokasi gambar Anda */
+  background-image: url('../image/happy-family2.jpg'); /* Ganti URL sesuai lokasi gambar Anda */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -78,6 +78,7 @@ body{
   align-items: center;
 }
 
+
 .hero-content {
   margin-right: 600px;
   width: 600px;
@@ -86,7 +87,7 @@ body{
 }
 
 .hero-title {
-  background: #284e76;
+  background: #5928b1;
   display: inline-block;
   padding: 20px 20px;
   border-radius: 8px;
@@ -124,8 +125,8 @@ body{
 }
 
 .tab.active {
-  color: #e4572e;
-  border-bottom: 2px solid #e4572e;
+  color: #5928b1;
+  border-bottom: 2px solid #5928b1;
 }
 
 .form-group {
@@ -164,7 +165,7 @@ body{
 }
 
 .btn-search {
-  background: #e4572e;
+  background: #5928b1;
   color: #fff;
   border: none;
   margin-top: 20px;
@@ -300,13 +301,13 @@ body{
 
 .info-icon{
   font-size: 30px;
-  color: #e4572e;
+  color: #5928b1;
 }
 
 .safety-section{
   height: 600px;
-  background-color: #faf7f7;
-  margin: 20px 0;
+  background-color: #cbbce6;
+  margin: 0;
   border-radius: 0 0 100px 100px;
 }
 .safety-content {
@@ -319,17 +320,41 @@ body{
   height: 100%;
 }
 
-.safety-image {
-  position: relative;
-  flex: 1;
-  max-width: 50%;
+.safety-video {
+    position: relative;
+    flex: 1;
+    max-width: 50%;
+    margin-right: 40px;
+    overflow: hidden; /* Menghindari isi video melampaui radius */
 }
 
-.safety-image img {
+
+.safety-video video {
   width: 100%;
   height: auto;
-  border-radius: 20px;
+  border-radius: 20px; /* Radius bekerja pada elemen video */
 }
+
+.safety-video {
+    position: relative;
+    flex: 1;
+    max-width: 50%;
+    margin-right: 40px;
+}
+
+.video-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px; /* Terapkan radius pada wrapper */
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: auto;
+    display: block; /* Hilangkan margin default video */
+}
+
+
 
 .safety-text {
   flex: 1;
@@ -338,10 +363,11 @@ body{
 }
 
 .safety-text h2 {
-  font-size: 2.5rem;
-  color: #2a3d59;
+  font-size: 1.9rem;
+  color: #5928b1;
   margin-bottom: 20px;
   line-height: 1.2;
+  font-weight: 700;
 }
 
 .highlight {
@@ -357,7 +383,7 @@ body{
 .safety-text p {
   font-size: 1rem;
   margin-bottom: 20px;
-  color: #444;
+  color: #5d458a;
 }
 
 .safety-list {
@@ -369,7 +395,7 @@ body{
 
 .safety-list li {
   position: relative;
-  color: #2a3d59;
+  color: #5d458a;
   padding-left: 25px;
 }
 
@@ -377,12 +403,7 @@ body{
   content: "✔";
   position: absolute;
   left: 0;
-  color: #e4572e;
-}
-
-.safety-list a {
-  color: #e4572e;
-  text-decoration: none;
+  color: #5928b1;
 }
 
 .safety-list a:hover {
@@ -391,7 +412,8 @@ body{
 
 .customize-section{
   height: 500px;
-  margin: 20px 50px;
+  
+  background-color: #5928b1;
 }
 
 .customize-content{
@@ -405,7 +427,13 @@ body{
 }
 
 .customize-text{
-  max-width: 30%;
+  max-width: 40%;
+  color: #cbbce6;
+}
+
+.customize-text > h2{
+  font-weight: 700;
+  font-size: 2.2rem;
 }
 
 .customize-image{
@@ -422,13 +450,19 @@ body{
 
 .finding-section{
   height: auto;
-  background-color: #faf7f7;
+  background-color: #cbbce6;
 }
 .finding-content{
   display: flex;
   gap: 70px;
   align-items: center;
   margin: 0
+}
+
+.finding-text > h2{
+  font-size: 2.0rem;
+  font-weight: 700;
+  color: #5928b1;
 }
 
 .finding-text button{
