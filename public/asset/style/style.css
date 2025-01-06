@@ -343,9 +343,9 @@ body{
 }
 
 .video-wrapper {
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px; /* Terapkan radius pada wrapper */
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px; /* Terapkan radius pada wrapper */
 }
 
 .video-wrapper video {
@@ -468,6 +468,7 @@ body{
 .finding-text button{
   width: 300px;
 }
+
 
 /* Footer */
 .footer-section {
